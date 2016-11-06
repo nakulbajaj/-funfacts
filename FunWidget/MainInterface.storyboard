@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BfI-49-91o">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="5KF-hH-r0I">
+            <objects>
+                <viewController id="BfI-49-91o" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z1e-8b-bQS"/>
+                        <viewControllerLayoutGuide type="bottom" id="pwO-85-11I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Org-J2-DEX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know that..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="bP3-HT-Hnc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yq9-7c-Zmx">
+                                <rect key="frame" x="0.0" y="37" width="320" height="221"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Yq9-7c-Zmx" firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" id="6Tc-5f-UMo"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="Org-J2-DEX" secondAttribute="leading" id="H0W-kM-MYT"/>
+                            <constraint firstItem="Yq9-7c-Zmx" firstAttribute="leading" secondItem="GcN-lo-r42" secondAttribute="leading" id="HND-a7-tPa"/>
+                            <constraint firstItem="Yq9-7c-Zmx" firstAttribute="bottom" secondItem="pwO-85-11I" secondAttribute="top" id="PZV-UR-1zp"/>
+                            <constraint firstAttribute="trailing" secondItem="Yq9-7c-Zmx" secondAttribute="trailing" id="UwM-rU-k2h"/>
+                            <constraint firstItem="Yq9-7c-Zmx" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" symbolic="YES" id="XpL-Wm-xN0"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Z1e-8b-bQS" secondAttribute="bottom" id="iau-Fq-wxH"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="258"/>
+                    <connections>
+                        <outlet property="fact" destination="Yq9-7c-Zmx" id="jBG-m4-3rR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XD-JT-Isl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="401"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

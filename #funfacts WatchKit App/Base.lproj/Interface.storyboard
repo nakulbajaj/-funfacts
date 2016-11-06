@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D130a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="1" alignment="center" textAlignment="center" numberOfLines="30" id="WRX-ni-IoZ">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="1" alignment="center" text="#FunFacts" textAlignment="center" id="ie0-kC-A9K">
+                            <color key="textColor" red="1" green="0.7496403089" blue="0.1436515438" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="heavy" pointSize="23"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Tap &quot;Next&quot; to enjoy some fun facts" textAlignment="center" numberOfLines="3" id="AeE-3R-fdZ"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Next" id="a77-IG-QXc">
+                            <fontDescription key="font" type="system" weight="heavy" pointSize="15"/>
+                            <connections>
+                                <action selector="TapMe" destination="AgC-eL-Hgc" id="U78-Hq-IU3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="fact" destination="WRX-ni-IoZ" id="7YU-yw-Mxx"/>
+                        <outlet property="funfactLabel" destination="ie0-kC-A9K" id="AYU-BH-OQr"/>
+                        <outlet property="welcomeLabel" destination="AeE-3R-fdZ" id="Syd-oP-7dQ"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
